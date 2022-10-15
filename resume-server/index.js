@@ -2,8 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const documents = require("./routes/documents.js");
 
-
-    
 const app = express();
 
 app.use(cors({

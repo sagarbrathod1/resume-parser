@@ -14,6 +14,7 @@ describe("Gets /documents", async function () {
         expect(response.body.documents.length).to.eql(0);
     });
 });
+
 describe("Posts a document to /documents", async function () {
     it("returns one document", async function () {
 

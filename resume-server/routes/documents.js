@@ -38,7 +38,6 @@ documents.get("/", function (request, response) {
 });
 
 documents.post("/", upload.single("document"), function (request, response) {
-    // TODO: Adds document test
 
     console.log(request.file);
 
@@ -64,17 +63,13 @@ documents.post("/", upload.single("document"), function (request, response) {
 
 
         }
-        }, /pdf/);
-
-
-
+    }, /pdf/);
 });
 
 function checkFileType(file, cb, filetypes){
-  // Allowed ext
-  // Check ext
+
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
-  // Check mime
+
   const mimetype = filetypes.test(file.mimetype);
 
   if(mimetype && extname){
@@ -82,6 +77,7 @@ function checkFileType(file, cb, filetypes){
   } else {
     cb('Error: Images Only!');
   }
+  
 }
 
 module.exports = documents;

@@ -21,12 +21,9 @@ export function Counter() {
         set_is_chosen(true);
     }
     console.log(our_file);
-
   }
 
   const handleSubmission = function () {
-
-
     const form_data = new FormData();
     form_data.append("document", our_file);
     console.log(form_data);
@@ -46,9 +43,7 @@ export function Counter() {
     .catch((error) => {
         console.error('Error:', error);
     });
-
   }
-
 
   return (
     <div>
