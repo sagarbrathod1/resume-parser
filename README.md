@@ -1,6 +1,6 @@
 # Automated Resumer Parser
 
-I developed a website that allows applicants to upload their resumes and allows recruiters to search for qualified candidates.
+I developed a web application that allows applicants to upload their resumes and allows recruiters to search for qualified candidates.
 
 The backend component parses through pdfs and indexes key information for easy search.
 
