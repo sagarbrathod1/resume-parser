@@ -1,4 +1,4 @@
-# Automated Resumer Parser
+# Automated Resume Parser
 
 I developed a web application that allows applicants to upload their resumes and allows recruiters to search for qualified candidates.
 
